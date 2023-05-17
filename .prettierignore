@@ -1,0 +1,26 @@
+# /**/*.d.ts
+/src/*.d.ts
+*.next-env.js
+next-env.js
+*.config.js
+package.json
+.eslintrc.cjs
+/**/*.scss
+/**/*.less
+/**/*.css
+/**/*.cjs
+*.config.json
+.prettierrc.js
+.gitignore
+/src/setupTests.ts
+/src/reportWebVitals.ts
+.next/*
+.vs/*
+public/*
+vite.config.ts
+build
+coverage
+html
+.gitlab
+.vscode
+node_modules

@@ -1,0 +1,76 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"vitest-globals/env": true
+	},
+	"extends": [
+		"next/core-web-vitals",
+		"prettier",
+		"plugin:prettier/recommended",
+		"plugin:import/typescript",
+		"plugin:tailwindcss/recommended",
+		"plugin:testing-library/react",
+		"plugin:sonarjs/recommended",
+		"plugin:vitest/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"plugins": [
+		"@typescript-eslint",
+		"react",
+		"prettier",
+		"tailwindcss",
+		"unused-imports",
+		"react-refresh",
+		"simple-import-sort",
+		"sonarjs",
+		"testing-library",
+		"import",
+		"vitest"
+	],
+	"rules": {
+		"react/jsx-uses-react": "off",
+		"react/react-in-jsx-scope": "off",
+		"jsx-a11y/anchor-is-valid": "off",
+		"import/no-unresolved": "off",
+		"import/extensions": "off",
+		"no-unused-vars": "off",
+		"unused-imports/no-unused-imports": "error",
+		"tailwindcss/no-custom-classname": "off",
+		"unused-imports/no-unused-vars": [
+			"warn",
+			{
+				"vars": "all",
+				"varsIgnorePattern": "^_",
+				"args": "none",
+				"argsIgnorePattern": "^_"
+			}
+		],
+		"simple-import-sort/imports": "error",
+		"simple-import-sort/exports": "error",
+		"sonarjs/no-duplicate-string": "off",
+		"@typescript-eslint/consistent-type-imports": "error",
+		"sonarjs/no-nested-template-literals": "off",
+		"sonarjs/cognitive-complexity": ["warn", 130],
+		"testing-library/prefer-screen-queries": "off",
+		"testing-library/prefer-find-by": "off",
+		"testing-library/no-node-access": "off",
+		"testing-library/render-result-naming-convention": "off",
+		"import/no-named-as-default-member": "off"
+	},
+	"globals": {
+		"JSX": true,
+		"APP_VERSION": true,
+		"React": true
+	},
+	"settings": {
+		"import/resolver": {
+			"typescript": {
+				"alwaysTryTypes": true
+			}
+		},
+		"react": {
+			"version": "detect"
+		}
+	}
+}
